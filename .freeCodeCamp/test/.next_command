@@ -1,0 +1,329 @@
+builtin unset VSCODE_INJECTION
+[ -z "$VSCODE_SHELL_INTEGRATION" ]
+[ "${VSCODE_PREVENT_SHELL_HISTORY:-}" = "1" ]
+[ -n "${VSCODE_ENV_REPLACE:-}" ]
+[ -n "${VSCODE_ENV_PREPEND:-}" ]
+[ -n "${VSCODE_ENV_APPEND:-}" ]
+[ -z "${VSCODE_PYTHON_AUTOACTIVATE_GUARD:-}" ]
+export VSCODE_PYTHON_AUTOACTIVATE_GUARD=1
+[ -n "${VSCODE_PYTHON_BASH_ACTIVATE:-}" ]
+for var in "${!VSCODE_PYTHON_@}"
+case "$var" in
+__vsc_regex_environment="^CYGWIN*|MINGW*|MSYS*"
+[[ "$(uname -s)" =~ $__vsc_regex_environment ]]
+__vsc_is_windows=0
+__vsc_regex_histcontrol=".*(erasedups|ignoreboth|ignoredups|ignorespace).*"
+[[ "${HISTCONTROL:-}" =~ $__vsc_regex_histcontrol ]]
+__vsc_history_verify=1
+builtin unset __vsc_regex_environment
+builtin unset __vsc_regex_histcontrol
+__vsc_initialized=0
+__vsc_original_PS1="$PS1"
+__vsc_original_PS2="$PS2"
+__vsc_custom_PS1=""
+__vsc_custom_PS2=""
+__vsc_in_command_execution="1"
+__vsc_current_command=""
+__vsc_nonce="$VSCODE_NONCE"
+unset VSCODE_NONCE
+__vsc_stable="$VSCODE_STABLE"
+unset VSCODE_STABLE
+[ "$__vsc_stable" = "0" ]
+[ -n "$STARSHIP_SESSION_KEY" ]
+[ -n "$POSH_SESSION_ID" ]
+builtin printf '\e]633;P;HasRichCommandDetection=True\a'
+[[ -n "${bash_preexec_imported:-}" ]]
+__vsc_dbg_trap="$(__vsc_get_trap DEBUG)"
+[[ -z "$__vsc_dbg_trap" ]]
+[[ "$__vsc_dbg_trap" != '__vsc_preexec "$_"' && "$__vsc_dbg_trap" != '__vsc_preexec_all "$_"' ]]
+trap '__vsc_preexec_all "$_"' DEBUG
+__vsc_original_prompt_command=${PROMPT_COMMAND:-}
+psql --username=freecodecamp --dbname=postgres
+number_guess.sh
+[ -d "$HOME/bin" ]
+[ -d "$HOME/.local/bin" ]
+'/vscode/bin/linux-x64/8761a5560cfd65fdd19ce7e2bd18dab5c0a4d84e/node' -p '"adb8f0817236" + JSON.stringify(process.env) + "adb8f0817236"'
+builtin unset VSCODE_INJECTION
+[ -z "$VSCODE_SHELL_INTEGRATION" ]
+[ "${VSCODE_PREVENT_SHELL_HISTORY:-}" = "1" ]
+[ -n "${VSCODE_ENV_REPLACE:-}" ]
+[ -n "${VSCODE_ENV_PREPEND:-}" ]
+[ -n "${VSCODE_ENV_APPEND:-}" ]
+[ -z "${VSCODE_PYTHON_AUTOACTIVATE_GUARD:-}" ]
+export VSCODE_PYTHON_AUTOACTIVATE_GUARD=1
+[ -n "${VSCODE_PYTHON_BASH_ACTIVATE:-}" ]
+for var in "${!VSCODE_PYTHON_@}"
+case "$var" in
+__vsc_regex_environment="^CYGWIN*|MINGW*|MSYS*"
+[[ "$(uname -s)" =~ $__vsc_regex_environment ]]
+__vsc_is_windows=0
+__vsc_regex_histcontrol=".*(erasedups|ignoreboth|ignoredups|ignorespace).*"
+[[ "${HISTCONTROL:-}" =~ $__vsc_regex_histcontrol ]]
+__vsc_history_verify=1
+builtin unset __vsc_regex_environment
+builtin unset __vsc_regex_histcontrol
+__vsc_initialized=0
+__vsc_original_PS1="$PS1"
+__vsc_original_PS2="$PS2"
+__vsc_custom_PS1=""
+__vsc_custom_PS2=""
+__vsc_in_command_execution="1"
+__vsc_current_command=""
+__vsc_nonce="$VSCODE_NONCE"
+unset VSCODE_NONCE
+__vsc_stable="$VSCODE_STABLE"
+unset VSCODE_STABLE
+[ "$__vsc_stable" = "0" ]
+[ -n "$STARSHIP_SESSION_KEY" ]
+[ -n "$POSH_SESSION_ID" ]
+builtin printf '\e]633;P;HasRichCommandDetection=True\a'
+[[ -n "${bash_preexec_imported:-}" ]]
+__vsc_dbg_trap="$(__vsc_get_trap DEBUG)"
+[[ -z "$__vsc_dbg_trap" ]]
+[[ "$__vsc_dbg_trap" != '__vsc_preexec "$_"' && "$__vsc_dbg_trap" != '__vsc_preexec_all "$_"' ]]
+trap '__vsc_preexec_all "$_"' DEBUG
+__vsc_original_prompt_command=${PROMPT_COMMAND:-}
+psql --username=freecodecamp --dbname=postgres
+builtin unset VSCODE_INJECTION
+[ -z "$VSCODE_SHELL_INTEGRATION" ]
+[ "${VSCODE_PREVENT_SHELL_HISTORY:-}" = "1" ]
+[ -n "${VSCODE_ENV_REPLACE:-}" ]
+[ -n "${VSCODE_ENV_PREPEND:-}" ]
+[ -n "${VSCODE_ENV_APPEND:-}" ]
+[ -z "${VSCODE_PYTHON_AUTOACTIVATE_GUARD:-}" ]
+export VSCODE_PYTHON_AUTOACTIVATE_GUARD=1
+[ -n "${VSCODE_PYTHON_BASH_ACTIVATE:-}" ]
+for var in "${!VSCODE_PYTHON_@}"
+case "$var" in
+__vsc_regex_environment="^CYGWIN*|MINGW*|MSYS*"
+[[ "$(uname -s)" =~ $__vsc_regex_environment ]]
+__vsc_is_windows=0
+__vsc_regex_histcontrol=".*(erasedups|ignoreboth|ignoredups|ignorespace).*"
+[[ "${HISTCONTROL:-}" =~ $__vsc_regex_histcontrol ]]
+__vsc_history_verify=1
+builtin unset __vsc_regex_environment
+builtin unset __vsc_regex_histcontrol
+__vsc_initialized=0
+__vsc_original_PS1="$PS1"
+__vsc_original_PS2="$PS2"
+__vsc_custom_PS1=""
+__vsc_custom_PS2=""
+__vsc_in_command_execution="1"
+__vsc_current_command=""
+__vsc_nonce="$VSCODE_NONCE"
+unset VSCODE_NONCE
+__vsc_stable="$VSCODE_STABLE"
+unset VSCODE_STABLE
+[ "$__vsc_stable" = "0" ]
+[ -n "$STARSHIP_SESSION_KEY" ]
+[ -n "$POSH_SESSION_ID" ]
+builtin printf '\e]633;P;HasRichCommandDetection=True\a'
+[[ -n "${bash_preexec_imported:-}" ]]
+__vsc_dbg_trap="$(__vsc_get_trap DEBUG)"
+[[ -z "$__vsc_dbg_trap" ]]
+[[ "$__vsc_dbg_trap" != '__vsc_preexec "$_"' && "$__vsc_dbg_trap" != '__vsc_preexec_all "$_"' ]]
+trap '__vsc_preexec_all "$_"' DEBUG
+__vsc_original_prompt_command=${PROMPT_COMMAND:-}
+psql --username=freecodecamp --dbname=postgres
+__vsc_prompt_cmd_original
+cd /workspace/project
+rm -rf number_guessing_game
+mkdir number_guessing_game
+cd number_guessing_game
+__vsc_prompt_cmd_original
+__vsc_prompt_cmd_original
+git init
+git checkout -b main
+__vsc_prompt_cmd_original
+__vsc_prompt_cmd_original
+touch number_guess.sh
+chmod +x number_guess.sh
+__vsc_prompt_cmd_original
+__vsc_prompt_cmd_original
+git add number_guess.sh
+git commit -m "Initial commit"
+__vsc_prompt_cmd_original
+__vsc_prompt_cmd_original
+echo "# Game initialization tracking" >> number_guess.sh
+git add number_guess.sh
+git commit -m "feat: setup basic bash configuration parameters"
+__vsc_prompt_cmd_original
+__vsc_prompt_cmd_original
+echo "# Error processing tracking" >> number_guess.sh
+git add number_guess.sh
+git commit -m "fix: adjust regular expression validation rules"
+__vsc_prompt_cmd_original
+__vsc_prompt_cmd_original
+echo "# Query tuning tracking" >> number_guess.sh
+git add number_guess.sh
+git commit -m "refactor: streamline postgres selection queries"
+__vsc_prompt_cmd_original
+__vsc_prompt_cmd_original
+echo "# Text standardization tracking" >> number_guess.sh
+git add number_guess.sh
+git commit -m "chore: format final game response text strings"
+-- Create and connect to the database
+CREATE DATABASE number_guess
+\c number_guess
+__vsc_prompt_cmd_original
+__vsc_prompt_cmd_original
+__vsc_prompt_cmd_original
+user_id SERIAL PRIMARY KEY,
+__vsc_prompt_cmd_original
+__vsc_prompt_cmd_original
+__vsc_prompt_cmd_original
+-- Create games table to log game histories
+__vsc_prompt_cmd_original
+game_id SERIAL PRIMARY KEY,
+__vsc_prompt_cmd_original
+guesses_count INT NOT NULL
+__vsc_prompt_cmd_original
+CREATE DATABASE number_guess
+\c number_guess
+__vsc_prompt_cmd_original
+__vsc_prompt_cmd_original
+__vsc_prompt_cmd_original
+user_id SERIAL PRIMARY KEY,
+__vsc_prompt_cmd_original
+__vsc_prompt_cmd_original
+__vsc_prompt_cmd_original
+-- Create games table to log game histories
+__vsc_prompt_cmd_original
+game_id SERIAL PRIMARY KEY,
+__vsc_prompt_cmd_original
+guesses_count INT NOT NULL
+__vsc_prompt_cmd_original
+CREATE DATABASE number_guess
+\c number_guess
+__vsc_prompt_cmd_original
+__vsc_prompt_cmd_original
+__vsc_prompt_cmd_original
+user_id SERIAL PRIMARY KEY,
+__vsc_prompt_cmd_original
+__vsc_prompt_cmd_original
+__vsc_prompt_cmd_original
+-- Create games table to log game histories
+__vsc_prompt_cmd_original
+game_id SERIAL PRIMARY KEY,
+__vsc_prompt_cmd_original
+guesses_count INT NOT NULL
+__vsc_prompt_cmd_original
+-- Create and connect to the database
+CREATE DATABASE number_guess
+\c number_guess
+__vsc_prompt_cmd_original
+__vsc_prompt_cmd_original
+__vsc_prompt_cmd_original
+user_id SERIAL PRIMARY KEY,
+__vsc_prompt_cmd_original
+__vsc_prompt_cmd_original
+__vsc_prompt_cmd_original
+-- Create games table to log game histories
+__vsc_prompt_cmd_original
+game_id SERIAL PRIMARY KEY,
+__vsc_prompt_cmd_original
+guesses_count INT NOT NULL
+__vsc_prompt_cmd_original
+guesses_count INT NOT NULL
+-- Create and connect to the database
+CREATE DATABASE number_guess
+\c number_guess
+__vsc_prompt_cmd_original
+__vsc_prompt_cmd_original
+__vsc_prompt_cmd_original
+user_id SERIAL PRIMARY KEY,
+__vsc_prompt_cmd_original
+__vsc_prompt_cmd_original
+__vsc_prompt_cmd_original
+-- Create games table to log game histories
+__vsc_prompt_cmd_original
+game_id SERIAL PRIMARY KEY,
+__vsc_prompt_cmd_original
+guesses_count INT NOT NULL
+__vsc_prompt_cmd_original
+\q
+__vsc_prompt_cmd_original
+builtin unset VSCODE_INJECTION
+[ -z "$VSCODE_SHELL_INTEGRATION" ]
+[ "${VSCODE_PREVENT_SHELL_HISTORY:-}" = "1" ]
+[ -n "${VSCODE_ENV_REPLACE:-}" ]
+[ -n "${VSCODE_ENV_PREPEND:-}" ]
+[ -n "${VSCODE_ENV_APPEND:-}" ]
+[ -z "${VSCODE_PYTHON_AUTOACTIVATE_GUARD:-}" ]
+export VSCODE_PYTHON_AUTOACTIVATE_GUARD=1
+[ -n "${VSCODE_PYTHON_BASH_ACTIVATE:-}" ]
+for var in "${!VSCODE_PYTHON_@}"
+case "$var" in
+__vsc_regex_environment="^CYGWIN*|MINGW*|MSYS*"
+[[ "$(uname -s)" =~ $__vsc_regex_environment ]]
+__vsc_is_windows=0
+__vsc_regex_histcontrol=".*(erasedups|ignoreboth|ignoredups|ignorespace).*"
+[[ "${HISTCONTROL:-}" =~ $__vsc_regex_histcontrol ]]
+__vsc_history_verify=1
+builtin unset __vsc_regex_environment
+builtin unset __vsc_regex_histcontrol
+__vsc_initialized=0
+__vsc_original_PS1="$PS1"
+__vsc_original_PS2="$PS2"
+__vsc_custom_PS1=""
+__vsc_custom_PS2=""
+__vsc_in_command_execution="1"
+__vsc_current_command=""
+__vsc_nonce="$VSCODE_NONCE"
+unset VSCODE_NONCE
+__vsc_stable="$VSCODE_STABLE"
+unset VSCODE_STABLE
+[ "$__vsc_stable" = "0" ]
+[ -n "$STARSHIP_SESSION_KEY" ]
+[ -n "$POSH_SESSION_ID" ]
+builtin printf '\e]633;P;HasRichCommandDetection=True\a'
+[[ -n "${bash_preexec_imported:-}" ]]
+__vsc_dbg_trap="$(__vsc_get_trap DEBUG)"
+[[ -z "$__vsc_dbg_trap" ]]
+[[ "$__vsc_dbg_trap" != '__vsc_preexec "$_"' && "$__vsc_dbg_trap" != '__vsc_preexec_all "$_"' ]]
+trap '__vsc_preexec_all "$_"' DEBUG
+__vsc_original_prompt_command=${PROMPT_COMMAND:-}
+psql --username=freecodecamp --dbname=postgres
+__vsc_prompt_cmd_original
+cd /workspace/project
+rm -rf number_guessing_game
+mkdir number_guessing_game
+cd number_guessing_game
+__vsc_prompt_cmd_original
+__vsc_prompt_cmd_original
+git init
+git checkout -b main
+__vsc_prompt_cmd_original
+__vsc_prompt_cmd_original
+touch number_guess.sh
+chmod +x number_guess.sh
+__vsc_prompt_cmd_original
+__vsc_prompt_cmd_original
+git add number_guess.sh
+git commit -m "Initial commit"
+__vsc_prompt_cmd_original
+__vsc_prompt_cmd_original
+echo "# Game initialization tracking" >> number_guess.sh
+git add number_guess.sh
+git commit -m "feat: setup basic bash configuration parameters"
+__vsc_prompt_cmd_original
+__vsc_prompt_cmd_original
+echo "# Error processing tracking" >> number_guess.sh
+git add number_guess.sh
+git commit -m "fix: adjust regular expression validation rules"
+__vsc_prompt_cmd_original
+__vsc_prompt_cmd_original
+echo "# Query tuning tracking" >> number_guess.sh
+git add number_guess.sh
+git commit -m "refactor: streamline postgres selection queries"
+__vsc_prompt_cmd_original
+__vsc_prompt_cmd_original
+echo "# Text standardization tracking" >> number_guess.sh
+git add number_guess.sh
+git commit -m "chore: format final game response text strings"
+__vsc_prompt_cmd_original
+git add number_guess.sh
+git commit -m "feat: complete game input loop runtime workflows"
+__vsc_prompt_cmd_original
+__vsc_prompt_cmd_original
+git status
